@@ -1,0 +1,150 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     width: 100%;
+     height: 100vh;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+ }
+
+ .grid {
+     /* border: 2px solid white; */
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(32, 1fr);
+     grid-template-rows: repeat(13, 1fr);
+
+     >div {
+         /* border: 2px solid white; */
+         margin-top: 40px;
+
+         &:nth-of-type(1) {
+             grid-area: 1 / 1 / span 6 / span 8;
+             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+             background-color: darkslategray;
+             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+             position: relative;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 40px;
+
+             >img {
+                 grid-area: 1 / 1 / span 6 / span 8;
+                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 transform-origin: left;
+                 transition: 1s;
+                 position: absolute;
+                 z-index: 2;
+                 /* top: 0;
+                        left: 0; */
+             }
+
+             &:hover>img {
+                 transform: rotate(-100deg);
+             }
+         }
+
+         &:nth-of-type(2) {
+             grid-area: 7 / 9 / span 6 / span 8;
+             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+             background-color: darkslategray;
+             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+             position: relative;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 40px;
+
+             >img {
+                 grid-area: 7 / 9 / span 6 / span 8;
+                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 transform-origin: left;
+                 transition: 1s;
+                 position: absolute;
+                 z-index: 2;
+                 top: 0;
+                 left: 0;
+             }
+
+             &:hover>img {
+                 transform: rotate(-100deg);
+             }
+         }
+
+         &:nth-of-type(3) {
+             grid-area: 1 / 17 / span 6 / span 8;
+             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+             background-color: darkslategray;
+             position: relative;
+             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+             position: relative;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 40px;
+
+             >img {
+                 grid-area: 1 / 17 / span 6 / span 8;
+                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 transform-origin: left;
+                 transition: 1s;
+                 position: absolute;
+                 z-index: 2;
+                 top: 0;
+                 left: 0;
+             }
+
+             &:hover>img {
+                 transform: rotate(-100deg);
+             }
+         }
+
+         &:nth-of-type(4) {
+             grid-area: 7 / 25 / span 6 / span 8;
+             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+             background-color: darkslategray;
+             position: relative;
+             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 40px;
+
+             >img {
+                 grid-area: 7 / 25 / span 6 / span 8;
+                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 transform-origin: left;
+                 transition: 1s;
+                 position: absolute;
+                 z-index: 2;
+                 top: 0;
+                 left: 0;
+             }
+
+             &:hover>img {
+                 transform: rotate(-100deg);
+             }
+         }
+     }
+ }
