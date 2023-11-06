@@ -1,4 +1,4 @@
-# Animation-Trick25      
+# Animation-Trick25       
   
 **If you want to see a trick with animation, check out my code ♥️👀**  
        
